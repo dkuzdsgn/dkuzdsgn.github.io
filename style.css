@@ -1,0 +1,342 @@
+    @font-face {
+        font-family: 'Departura';
+        src: url(./Departura-BoldItalic.otf);
+    }
+    
+    @font-face {
+        font-family: 'LL DEtechno Glitch';
+        src: url(./LLDEtechnoGlitchGX.ttf);
+    }
+    @keyframes fadein-all {
+        0% { opacity:  0; }
+        100% { opacity:  1; }
+      }
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+            transform: translateY(50px)
+        }
+        50% {
+            transform: translate(0);
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes circles {
+        0% {
+            height: 93px;
+            width: 93px;
+        }
+        50% {
+            height: 110px;
+            width: 110px;
+        }
+        100% {
+            height: 93px;
+            width: 93px;
+        }
+    }
+    
+    @keyframes circlesX {
+        0% {
+            height: 93px;
+            width: 93px;
+        }
+        50% {
+            height: 80px;
+            width: 80px;
+        }
+        100% {
+            height: 93px;
+            width: 93px;
+        }
+    }
+    html {
+        background-color: black;
+    }
+    body {
+        font-family: 'LL DEtechno Glitch';
+        margin-top: 0;
+        margin-left: 0;
+        height: 100vh;
+        width: 100vw;
+        color: #fff;
+        cursor: default;
+        scroll-behavior: smooth;
+    }
+    
+    section {
+        height: 102vh;
+        width: 100vw;
+        left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        top: 0px;
+    }
+    main {
+        animation: fadein-all 1s 0.5s both;
+      }
+    .intro {
+        background-image: url(./intro.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-attachment: fixed;
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+        left: 0;
+        overflow: hidden;
+    }
+    
+    .intro img {
+        height: 10vh;
+    }
+    
+    .intro .info-intro {
+        margin: auto;
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        animation: fadein 1.5s ease-in;
+    }
+    
+    h1 {
+        font-family: 'LL DEtechno Glitch';
+        font-size: 64px;
+        mix-blend-mode: difference;
+        margin: 0;
+    }
+    
+    .intro p {
+        font-family: 'Departura';
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .day-one {
+        background-image: url(./1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-attachment: fixed;
+        background-position: center;
+        width: 100%;
+    }
+    
+    .day-two {
+        background-image: url(./2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-attachment: fixed;
+        background-position: center;
+        width: 100%;
+    }
+    
+    .day-three {
+        background-image: url(./3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-attachment: fixed;
+        background-position: center;
+        width: 100%;
+    }
+    
+    .news {
+        background-image: url(./4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        width: 100%;
+    }
+    
+    .date {
+        font-family: 'LL DEtechno Glitch';
+        font-size: 48px;
+        color: black;
+    }
+    
+    .lineup {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    }
+    
+    .lineup h2 {
+        font-family: 'Departura';
+        font-size: 48px;
+        color: rgb(83, 83, 83);
+        margin: 0;
+    }
+    
+    .lineup p {
+        font-family: 'Departura';
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    .news .container {
+        display: flex;
+        height: 80vh;
+    }
+    
+    .form {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    footer {
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: auto;
+    }
+    
+    .day-one .shape {
+        position: absolute;
+    }
+    
+    .circle {
+        height: 93px;
+        width: 93px;
+        background: linear-gradient(45deg, #1fd3eb, #da1c5b);
+        opacity: 0.7;
+        border-radius: 100%;
+        filter: blur(10px);
+    }
+    
+    #circle {
+        animation: circlesX 3s infinite;
+    }
+    
+    #circle-alt {
+        animation: circles 3s infinite;
+    }
+    
+    .flex-column {
+        flex-direction: column;
+    }
+    
+    .button {
+        border: solid 2px #FFEED1;
+        color: #FFEED1;
+        line-height: 1;
+        padding: 6px 12px;
+        min-width: 120px;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .register .container {
+        display: flex;
+    }
+    
+    .register h2 {
+        font-size: 64px;
+        margin-bottom: 48px;
+        line-height: 1.1;
+    }
+    
+    .sign-up {
+        display: flex;
+        border-bottom: solid 2px #9FFDFF;
+        padding-bottom: 12px;
+    }
+    
+    input {
+        background: none;
+        border: none;
+        font-size: 21px;
+        outline: none;
+        color: #fff;
+        font-family: 'Departura';
+    }
+    
+    .email-input {
+        flex: 1;
+    }
+    
+    .form {
+        margin: 0px 24px;
+    }
+    
+    .eyes {
+        width: 108px;
+        height: 32px;
+        background-image: url(./eyes_open.svg);
+    }
+    
+    .hand {
+        width: 57px;
+        height: 89px;
+        background-image: url(./ok_hand.svg);
+        align-self: flex-end;
+    }
+    
+    .eyes,
+    .hand {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    @media (max-width: 780px) {
+        .register .container {
+            /* this will stack our boxes on top of each other*/
+            flex-direction: column;
+        }
+        .register h2 {
+            font-size: 30px;
+        }
+        .form {
+            margin: 24px 0;
+        }
+    }
+    
+    @media (min-width: 640px) {
+        .lineup li,
+        .date {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .in-viewport .lineup li,
+        .in-viewport .date {
+            opacity: 1;
+        }
+    }
+    
+    @media (max-width: 1200px) {
+        h1 {
+            margin-top: 5%;
+            font-size: 36px;
+        }
+        .intro .info-intro {
+            width: 80vw;
+        }
+        .lineup h2 {
+            font-size: 36px;
+        }
+        footer img {
+            height: 5vh;
+        }
+    }
